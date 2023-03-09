@@ -1,0 +1,301 @@
+
+
+@media (min-width: 0rem) {
+
+
+  .cta-container > .body-container {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    gap: 55px;
+    margin: 50px 0 50px 0;
+  }
+
+
+  .cta-container #top {
+    position: relative;
+  }
+
+  .cta-container #top > picture > img {
+    width: 80vw;
+    max-width: 300px;
+    border-radius: 15px;
+    z-index: 9999999999999;
+  }
+
+
+
+  .cta-container #top:before{
+    content: '';
+    position: absolute;
+    display: block;
+    background-color: var(--primary);
+    border-radius: 15px;
+    width: 39%;
+    height: 34%;
+    left: 65.4%;
+    z-index: -1;
+    bottom: 70%;
+  }
+
+  .cta-container #top::after {
+    content: '';
+    position: absolute;
+    display: block;
+    background-color: var(--primary);
+    border-radius: 15px;
+    width: 39%;
+    height: 34%;
+    left: -4.0%;
+    z-index: -1;
+    bottom: -2.5%;
+  }
+
+
+  #about-us #left:after {
+    content: '';
+    position: absolute;
+    display: block;
+    background-color: var(--primary);
+    border-radius: 15px;
+    width: 43%;
+    height: 35%;
+    top: 68.2%;
+    left: -3.6%;
+    z-index: -1;
+  }
+
+
+
+
+  #cta .cta-content {
+     margin-top: 50px;
+  }
+
+
+  #cta-image-container::after {
+  top: 61.0%;
+  left: -4%;;
+  }
+
+  .cta-container {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  background-color: rgb(18, 18, 18);
+  }
+
+  .cta-stripes {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  pointer-events: none;
+  }
+
+  .cta-stripes::before {
+    content: '';
+    width: 8.5rem;
+    height: 60rem;
+    background: rgba(255, 255, 255, 0.455);
+    opacity: .2;
+    transform: rotate(-25deg);
+    position: absolute;
+    display: block;
+    top: -5rem;
+    left: 74%;
+    margin-left: -6.25em;
+    z-index: -1;
+  }
+
+  .cta-stripes::after {
+    content: '';
+    width: 8.5rem;
+    height: 60rem;
+    background: rgba(255, 255, 255, 0.455);
+    opacity: .2;
+    transform: rotate(-25deg);
+    position: absolute;
+    display: block;
+    top: -3rem;
+    left: 29%;
+    margin-left: -6.25em;
+    z-index: -1;
+  }
+
+  .cta-content {
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 85vw;
+  color: white;
+  }
+
+  .cta-content > .accent-header {
+  text-align: center;
+  white-space: unset;
+  font-size: 1.7rem;
+  }
+
+
+  .cta-content > p {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+  }
+
+  #cta-image-container {
+  position: relative;
+  z-index: 999;
+  }
+
+  #cta-image-container > img {
+  width: 85vw;
+  max-width: 25rem;
+  }
+
+  #cta-image  {
+  z-index: 1;
+  border-radius: 15px;
+  }
+
+  #cta-image-container::before {
+  content: '';
+  position: absolute;
+  display: block;
+  background-color: var(--primary);
+  border-radius: 15px;
+  width: 40%;
+  height: 27%;
+  z-index: -1;
+  }
+
+  #cta-image-container::after {
+  content: '';
+  position: absolute;
+  display: block;
+  background-color: var(--primary);
+  border-radius: 15px;
+  width: 40%;
+  height: 27%;
+  z-index: -1;
+  }
+}
+
+
+@media (min-width: 360px) {
+  #cta-image-container::before {
+     top: 9%;
+     left: 63%;
+  }
+  #cta-image-container::after {
+     top: 64%;
+     left: -4%;
+  }
+}
+
+@media (min-width: 400px) {
+  #cta-image-container::before {
+     top: 8%;
+     left: 63%;
+  }
+  #cta-image-container::after {
+     top: 64%;
+     left: -4%;
+  }
+}
+
+@media (min-width: 500px) {
+
+
+  #cta-image-container::before {
+     top: 7%;
+     left: 63%;
+  }
+  #cta-image-container::after {
+     top: 65.5%;
+     left: -3%;
+  }
+}
+
+
+@media (min-width: 810px) {
+
+  .cta-container #top > picture > img {
+    width: auto;
+    max-width: 400px;
+  }
+
+  .cta-container > .body-container {
+    flex-direction: row;
+    max-width: 80rem;
+  }
+
+  .cta-content > .accent-header {
+    text-align: unset;
+  }
+
+  #cta .cta-content {
+     margin-top: unset;
+  }
+
+  .cta-container {
+     justify-content: space-evenly;
+  }
+
+  .cta-stripes::before {
+    content: '';
+    width: 8.25em;
+    height: 56.25em;
+    background: rgba(255, 255, 255, 0.455);
+    opacity: .2;
+    transform: rotate(-25deg);
+    position: absolute;
+    display: block;
+    top: -51%;
+    left: 56%;
+    margin-left: -6.25em;
+    z-index: -1;
+  }
+
+.cta-stripes::after {
+	content: '';
+	width: 8.25em;
+	height: 62.5em;
+	background: rgba(255, 255, 255, 0.455);
+	opacity: .2;
+	transform: rotate(-25deg);
+	position: absolute;
+	display: block;
+	top: -51%;
+	left: 53%;
+	margin-left: -15em;
+	z-index: -1;
+}
+
+
+
+  .cta-content {
+     justify-content: left;
+     align-items: unset;
+     text-align: left;
+     max-width: 800px;
+  }
+  .cta-content > .body-header {
+     white-space: unset;
+     font-size: 2.5rem;
+     text-align: left;
+  }
+  .cta-content > p {
+     text-align: left;
+     max-width: 80%;
+  }
+  .cta-container > img {
+     width: 25vw;
+  }
+}

@@ -1,0 +1,176 @@
+@media (min-width: 0px) {
+
+
+
+  #faq #top {
+    max-width: 850px;
+  }
+
+  #faq .accent {
+    transform: unset;
+  }
+
+
+
+  #faq .body-container #bottom {
+    position: relative;
+  }
+
+
+
+
+  #faq .body-container #bottom:before{
+    content: '';
+    position: absolute;
+    display: block;
+    background-color: var(--primary);
+    border-radius: 15px;
+    width: 43%;
+    height: 35%;
+    top: -3.8%;
+    left: 60.4%;
+    z-index: -1;
+  }
+
+
+  #faq .body-container #bottom:after {
+    content: '';
+    position: absolute;
+    display: block;
+    background-color: var(--primary);
+    border-radius: 15px;
+    width: 43%;
+    height: 35%;
+    top: 68.7%;
+    left: -3.6%;
+    z-index: -1;
+  }
+
+
+
+
+  details > p {
+    max-width: 600px;
+  }
+
+
+
+    #faq .body-container {
+        flex-direction: column-reverse;
+    }
+
+    #faq #bottom {
+        display: flex;
+        margin: auto;
+        margin-bottom: 25px;
+    }
+
+    #faq #image-container img:nth-child(2) {
+        display: none;
+    }
+
+    #faq #image-container {
+        display: flex;
+        margin: auto;
+    }
+
+    #faq #image-container > img {
+        max-width: 20rem;
+        width: 64vw;
+        border-radius: 15px;
+    }
+}
+
+@media (min-width: 760px) {
+
+    #faq {
+        margin-top: 100px;
+    }
+
+
+
+
+    #faq #image-container img:nth-child(2) {
+        display: block;
+    }
+
+    #faq #image-container img:nth-child(1) {
+        display: none;
+    }
+
+    #faq #image-container > img {
+      width: 35vw;
+      max-width: 420px;
+    }
+
+
+
+}
+
+@media (min-width: 1000px) {
+    #faq .body-container {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+
+}
+
+#faq span {
+    padding: 10px;
+}
+
+details, summary {
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+
+
+
+summary {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+summary::marker {
+  content: '+';
+        position: absolute;
+    bottom: -5px;
+}
+
+details[open] > summary::marker  {
+  content: 'x';
+            position: absolute;
+    bottom: -5px;
+}
+
+
+details > p {
+    max-width: 600px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+details {
+    margin-bottom: 25px;
+    border-bottom: solid rgb(0, 0, 0) 1px;
+}
+
+
+
+
+
+
+#faq #top > p {
+    margin-top: 15px;
+}
+
+
+
+
+

@@ -1,0 +1,137 @@
+#header-alt::before {
+   display: none;
+}
+#header-alt::after {
+   display: none;
+}
+
+.header-text-container-alt {
+   color: white;
+   display: flex;
+   margin-top: 25px;
+   height: 100vw;
+   font-size: 4.0rem;
+   width: auto;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.form-container {
+	display: flex;
+	flex-direction: column;
+	margin-top: 50px;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+   max-width: 96%;
+}
+
+
+
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	max-width: 90%;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+
+.contact-form .body-header-container {
+   text-align: center;
+}
+
+/* @media (min-width: 900px) {
+   .form-container {
+      justify-content: space-around;
+      align-items: center;
+      width: 80rem;
+   }
+   .contact-form {
+      padding: unset;
+      max-width: 40vw;
+   }
+} */
+
+.info-panel {
+   margin-top: 50px;
+   padding: 70px 20px 50px 20px;
+   border-radius: 10px;
+   background-color: var(--primary);
+   text-align: left;
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   margin-left: 15px;
+   margin-right: 15px;
+   height: 100%;
+}
+
+.panel-item {
+   margin-bottom: 25px;
+   color: white;
+}
+
+
+.panel-item-header {
+   font-weight: bolder;
+   border-left: solid var(--primary-light) 3px;
+   padding-left: 15px;
+   margin-bottom: 10px;
+}
+
+.panel-item > p {
+   font-size: 1.2rem;
+}
+
+.contact-form > input,
+.contact-form > textarea {
+	outline: none;
+	border: solid grey 1px;
+	border-radius: 5px;
+	font-size: 1.0rem;
+	width: 100%;
+	padding-top: 17px;
+	padding-bottom: 17px;
+}
+
+.contact-form > textarea {
+   margin-bottom: 20px;
+}
+
+#form-button > button {
+   padding: 15px;
+   width: 170px;
+}
+
+.body-header {
+   font-size: 2.4rem;
+}
+
+.body-header-container > p {
+   margin-top: 10px;
+   margin-bottom: 25px;
+}
+
+@media (min-width: 760px) {
+   .form-container {
+      flex-direction: row;
+      width: 96%;
+      max-width: 80rem;
+   }
+   .contact-form .body-header-container {
+      text-align: unset;
+   }
+   .contact-form {
+      align-items: unset;
+   }
+
+   .contact-form > input, .contact-form > textarea {
+
+      width: 80%;
+   }
+}
+

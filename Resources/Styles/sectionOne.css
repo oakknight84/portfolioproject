@@ -1,0 +1,86 @@
+@media (min-width: 0px) {
+
+
+  #section-one .card img {
+    max-width: 55px;
+  }
+
+
+  #section-one {
+    margin: 100px 0 100px 0;
+  }
+
+  #section-one .accent {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    transform: unset;
+    width: unset;
+    white-space: unset;
+    overflow: hidden;
+  }
+
+  #section-one .card {
+    margin-bottom: 35px;
+    background-color: white;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.241) 0px 7px 29px 0px;
+    padding: 30px;
+    max-width: 75%;
+    /* margin-bottom: 65px; */
+  }
+
+
+
+  #section-one .card::before{
+    content: '';
+    position: absolute;
+    display: block;
+    background-color: var(--primary);
+    border-radius: 13px;
+    width: 43%;
+    height: 150px;
+    top: -17px;
+    left: 61.2%;
+    z-index: -1;
+  }
+
+  #section-one #bottom {
+    margin-top: 50px;
+    width: 100%;
+  }
+
+}
+
+
+@media (min-width: 500px) {
+
+  #section-one #bottom {
+   justify-content: center;
+   gap: 65px;
+  }
+
+  #section-one .card {
+    max-width: 70%;
+  }
+
+}
+
+@media (min-width: 900px) {
+
+
+
+  #section-one .card {
+    padding: 30px 25px 30px 25px;
+    max-width: 350px;
+  }
+  #section-one #bottom {
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    gap: 0px;
+  }
+
+}
+
+

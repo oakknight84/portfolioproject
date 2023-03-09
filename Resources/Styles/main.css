@@ -1,0 +1,375 @@
+li {
+	display: inline-block;
+}
+
+
+
+
+
+:root {
+/*    --primary: #252727;*/
+    --primary: red;
+    --primary-light: rgb(253, 172, 172);
+    --secondaryColor: red;
+    --extraColor: rgb(0, 153, 255);
+ }
+
+
+
+.round-button {
+	color: var(--primary);
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-webkit-tap-highlight-color: none;
+	-webkit-tap-highlight-color: transparent;
+	padding: 10px;
+	margin-top: 25px;
+	border: solid var(--primary) 2px;
+	border-radius: 20px;
+	font-size: 1.3rem;
+	text-align: center;
+	width: 150px;
+	}
+
+
+.transparent-button {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-webkit-tap-highlight-color: none;
+	-webkit-tap-highlight-color: transparent;
+	padding: 10px;
+	margin-top: 25px;
+	border: solid white 2px;
+	border-radius: 10px;
+	font-size: 1.3rem;
+	color: var(--primary);
+	text-align: center;
+	width: 150px;
+}
+.transparent-button-colored {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-webkit-tap-highlight-color: none;
+	-webkit-tap-highlight-color: transparent;
+	padding: 10px;
+	margin-top: 0px;
+	background-color: var(--primary);
+	border-radius: 5px;
+	font-size: 1.3rem;
+	font-weight: bold;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	width: 150px;
+}
+
+
+
+
+
+
+
+.opaque-button {
+   display: block;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-webkit-tap-highlight-color: none;
+	-webkit-tap-highlight-color: transparent;
+	padding: 13px;
+	margin-top: 0px;
+	background-color: var(--primary);
+	border-radius: 3px;
+	font-size: 1.3rem;
+	font-weight: bold;
+	color: rgb(255, 255, 255) !important;
+	text-align: center;
+	width: 135px;
+}
+
+
+
+.opaque-button-submit {
+	padding: 10px;
+	width: 150px;
+	border-color: none;
+	background-color: var(--secondaryColor);
+	color: white;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-webkit-tap-highlight-color: none;
+	-webkit-tap-highlight-color: transparent;
+	margin-top: 10px;
+	border-radius: 10px;
+	font-size: 1.3rem;
+	text-align: center;
+	width: 150px;
+}
+
+
+button {
+	all: unset;
+	cursor: pointer;
+ }
+
+
+
+.round-button:hover,
+.round-button:focus,
+.round-button:active {
+	cursor: pointer;
+	color: var(--primary);
+}
+
+
+
+.transparent-button:hover,
+.transparent-button:active,
+.transparent-button:focus {
+	cursor: pointer;
+	color: white;
+}
+
+
+.opaque-button:hover,
+.opaque-button:focus,
+.opaque-button:active {
+	cursor: pointer;
+	color: white;
+}
+
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li, a,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	scroll-behavior: smooth;
+	margin: 0;
+	padding: 0;
+	scroll-padding-top: 100px;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+
+}
+::selection {
+   background-color: #3399FF;
+   color: #fff;
+ }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Fonts */
+
+
+@font-face {
+    font-family: "Open Sans";
+    font-display: swap;
+    src: url("../Fonts/OpenSans-Regular.woff2") format('woff2');
+ }
+
+label {
+   font-family: 'Open Sans', sans-serif;
+   margin-top: 10px;
+   margin-bottom: 10px;
+	width: 100%;
+    Color: white;
+}
+
+textarea {
+   font-family: 'Open Sans', sans-serif;
+}
+
+
+p, summary {
+   font-family: 'Open Sans', sans-serif;
+	line-height: 30px;
+   font-size: 1.1rem;
+   color: rgba(46, 46, 46, 0.792);
+}
+
+span {
+  font-family: 'Open Sans', sans-serif;
+}
+
+summary {
+  outline: none;
+}
+
+
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--textColor);
+    font-size: 1.6rem;
+    margin: 10px 0 10px 0;
+}
+
+ h2, li {
+   font-family: 'Open Sans', sans-serif;
+}
+
+
+button, .roundButton {
+	font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+a, a:hover, a:active {
+   text-decoration: none;
+}
+
+
+.footerLinksContainer > a {
+	color: black;
+}
+
+
+a {
+    outline: 0;
+    color: black;
+}
+
+a:visited {
+   text-decoration: none;
+}
+a:hover {
+   text-decoration: none;
+}
+
+a:hover, a:active {
+   text-decoration: none;
+}
+
+li, a {
+	font-family: 'Open Sans', sans-serif;
+color: black;
+}
+
+nav {
+	list-style-type: none;
+}
+
+
+
+
+:root{
+   scrollbar-face-color: var(--primary); /* Firefox 63 compatibility */
+   scrollbar-track-color: var(--primary); /* Firefox 63 compatibility */
+   scrollbar-color: var(--secondaryColor) rgb(0, 0, 0);
+ }
+
+
+::-webkit-scrollbar {
+   height: 12px;
+   width: 12px;
+   background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: red;
+    -webkit-border-radius: 5px;
+    -webkit-box-shadow: 0px 1px 2px rgb(0, 0, 0);
+}
+::-webkit-scrollbar-corner {
+   background: #000;
+}
+
+body {
+   scrollbar-width: none; /* For Firefox */
+}
+
+
+.body-container {
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 96%;
+   max-width: 35rem;
+}
+
+.accent{
+  font-size: 1.3rem;
+  transform: translateX(15px);
+  width: min-content;
+  white-space: nowrap;
+}
+
+
+.accent::before {
+  content: '';
+  position: relative;
+  display: inline-block;
+  height: 5px;
+  width: 50px;
+  background: var(--primary);
+  top: -4px;
+  left: -12px;
+}
+
+.accent-header {
+  line-height: 45px;
+  margin-bottom: 10px;
+  margin-top: unset;
+  font-weight: normal;
+  font-size: clamp(2rem, 4.5vw, 3rem);
+}
+
+
+@media (min-width: 900px) {
+	.body-container {
+      max-width: 80rem;
+   }
+
+}
+
+@media (min-width: 1000px) {
+   .body-topper{
+      font-size: 1.3rem;
+   }
+}
+
+
+
+
+
+/* * {
+	outline: solid red 2px;
+} */
+
+
+
+

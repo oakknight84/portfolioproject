@@ -1,0 +1,97 @@
+@media (min-width: 0px) {
+  #section-three {
+    background-color: var(--backgroundColor);
+    padding: 50px 0 50px 0;
+  }
+
+  #section-three #top .accent {
+    font-size: 1.3rem;
+    transform: unset;
+    width: min-content;
+    white-space: nowrap;
+  }
+
+  #section-three > .body-container {
+    align-items: unset;
+    flex-direction: column;
+  }
+
+  #section-three #top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    max-width: 450px;
+  }
+
+
+
+  #section-three #top button {
+    margin-top: 13px;
+  }
+
+  #bottom {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+   #section-three .card {
+    display: flex;
+    flex-wrap: wrap;
+    outline: solid rgba(128, 128, 128, 0.555) 1px;
+    border-radius: 3px;
+    padding: 40px;
+    margin-bottom: 15px;
+  }
+
+  #section-three .card > h1 {
+   margin-left: 10px ;
+   width: min-content;
+  }
+
+  #section-three .card > img {
+    height: 65px;
+  }
+
+}
+
+
+@media (min-width: 760px) {
+  #section-three .body-container {
+    max-width: 80rem;
+  }
+
+  #section-three #top {
+    max-width: unset;
+  }
+  #section-three #bottom {
+    justify-content: space-between;
+  }
+
+  #section-three .card {
+    max-width: 38%;
+  }
+}
+
+
+@media (min-width: 1300px) {
+
+  #section-three #top {
+    min-width: 500px;
+  }
+
+  #section-three #top > p {
+    max-width: 90%;
+  }
+
+
+  #section-three > .body-container {
+    flex-direction: row;
+  }
+}
+
+
+
+
